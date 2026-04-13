@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Monty Black";
+    src: url(Monty\ Black.otf);
+}
+body {
+    text-align: center;
+    background-color: #f59e33;
+    color: #3d1200;
+    font-family: "Monty Black";
+    font-size: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #de7521;
+    color: #fffad1;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.start-btn {
+    font-size: 20px;
+    font-family: "Monty Black";
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3d1200;
+    color: #fffad1;
+    cursor: pointer;
+    transition: 0,2s; 
+}

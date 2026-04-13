@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimpanse huskespil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Chimpanse huskespil</h1>
+
+<input type="text" id="playername" placeholder="Dit navn">
+
+<select id="difficulty">
+    <option value="4">Let (2x2)</option>
+    <option value="6">Medium (3x2)</option>
+    <option value="9">Svær (3x3)</option>
+</select>
+
+<br><br>
+
+<button id="startBtn" class="start-btn">Start</button>
+
+<h2 id="timer">0.00 sek</h2>
+
+<div class="grid" id="grid"></div>
+
+<h4>🏆 Let</h4>
+<ol id="leaderboard_easy"></ol>
+
+<h4>🏆 Medium</h4>
+<ol id="leaderboard_medium"></ol>
+
+<h4>🏆 Svær</h4>
+<ol id="leaderboard_hard"></ol>
+
+<button onclick="resetScores()">Reset alle leaderboards</button>
+
+<script src="script.js"></script>
+</body>
+</html>
